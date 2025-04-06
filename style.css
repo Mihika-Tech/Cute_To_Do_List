@@ -1,0 +1,238 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fff0f5;
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg');
+    background-size: cover;
+    color: rgb(252, 66, 97);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #ffebf3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8 px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#task-input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ff66b2;
+    border-radius: 5px;
+    color: #ff66b2;
+    font-family: 'Comic Sans MS', cursive;
+    transition: all 0.3s;
+}
+
+#task-input:focus {
+    outline: none;
+    border-color: #ff66b2;
+}
+
+#add-btn {
+    padding: 12px 20px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+#add-btn:hover {
+    background-color: #ff3385;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;;
+}
+
+.task-item {
+    background-color: white;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(255, 40, 40, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #ff66b2;
+    cursor: pointer;
+}
+
+.task-text {
+    flex: 1;
+    text-align: left;
+    transition: all 0.3s;
+}
+
+.task-completed .task-text {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+    margin-left: 15px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s;
+}
+
+.task-item:hover .task-actions {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.edit-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-bottom: 2px solid #ffb6c1;
+    font-family: 'Comic Sans MS', cursive;
+    color: #ff66b2;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.edit-input:focus {
+    outline: none;
+    border-color: #ff66b2;
+}
+
+.update-btn, .cancel-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all 0.2s;
+    min-width: 60px;
+  }
+  
+  .update-btn {
+    background-color: #66b3ff;
+  }
+  
+  .update-btn:hover {
+    background-color: #4d94ff;
+  }
+  
+  .cancel-btn {
+    background-color: #ff6666;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #ff4d4d;
+  }
+
+.edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    color: #ff66b2;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.2s;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+  
+.edit-btn:hover {
+    color: white;
+    background-color: #66b3ff;
+    transform: rotate(10deg);
+}
+  
+.delete-btn:hover {
+    color: white;
+    background-color: #ff6666;
+    transform: rotate(10deg);
+}
+
+#clear-btn {
+    padding: 10px 20px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+#clear-btn:hover {
+    background-color: #ff3385;
+}
+
+#footer {
+    margin-top: 30px;
+    color: #ff66b2;
+    font-size: 14px;
+}
+
+#footer span {
+    color: #ff66b2;
+    font-weight: bold;
+}
+
+/* .completed {
+    text-decoration: line-through;
+    color: gray;
+} */
+
+/* #task-list li button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#task-list li button:hover {
+    background-color: #ff3385;
+} */
